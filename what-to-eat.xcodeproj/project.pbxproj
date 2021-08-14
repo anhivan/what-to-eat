@@ -80,7 +80,6 @@
 			isa = PBXGroup;
 			children = (
 				74C95BE026C6C02600705CE7 /* Main.storyboard */,
-				74DEC5B926C7E14400932BCF /* QuestionaireViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -88,6 +87,7 @@
 		74E72CA326C6DDEE00701B6B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				74DEC5B926C7E14400932BCF /* QuestionaireViewController.swift */,
 				74C95BDE26C6C02600705CE7 /* IntroductionViewController.swift */,
 			);
 			path = Controller;

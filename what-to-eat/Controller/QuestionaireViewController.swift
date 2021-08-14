@@ -9,5 +9,14 @@ import Foundation
 import UIKit
 
 class QuestionaireViewController: UIViewController {
+    @IBOutlet weak var ingredientLabel: UILabel!
+    
+    let dishesData = DishesData()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        ingredientLabel.text = dishesData.getDishIngredient()
+    }
     
 }

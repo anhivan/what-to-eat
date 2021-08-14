@@ -10,23 +10,30 @@ import UIKit
 class IntroductionViewController: UIViewController {
 
     @IBOutlet weak var beginButton: UIButton!
+    @IBOutlet weak var helloLabel: UILabel!
+    @IBOutlet weak var introductionLabel: UILabel!
+    
+    let introductionData = IntroductionData()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        introductionLabel.text = introductionData.introduction
+        
+        helloLabel.text = introductionData.hello[Int.random(in: 0..<4)]
+        helloLabel.sizeToFit()
+        
+        beginButton.setTitle(introductionData.beginButtonText, for: .normal)
+        beginButton.sizeToFit()
     }
 
     @IBAction func beginButtonPressed(_ sender: UIButton) {
         self.performSegue(withIdentifier: "goToQuestionaire", sender: self)
     }
     
-    //Initialise segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        //Check which segue has been chosen, in this case ResultViewController
         if segue.identifier == "goToQuestionaire" {
-            //Create a variable holding reference to ResultViewController so we can access it's variables & methods
             let destinationVC = segue.destination as! QuestionaireViewController
-            //Access it's bmiValue variable
         }
     }
     

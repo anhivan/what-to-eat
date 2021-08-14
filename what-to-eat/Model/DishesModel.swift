@@ -11,5 +11,6 @@ import UIKit
 struct DishesModel {
     let dish: String
     let tip: String
+    let ingredients: Array<Any>
     let dishImage: UIImage
 }

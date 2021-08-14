@@ -15,6 +15,7 @@
 		74C95BE226C6C02600705CE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74C95BE026C6C02600705CE7 /* Main.storyboard */; };
 		74C95BE426C6C02600705CE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74C95BE326C6C02600705CE7 /* Assets.xcassets */; };
 		74C95BE726C6C02600705CE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74C95BE526C6C02600705CE7 /* LaunchScreen.storyboard */; };
+		74DEC5BA26C7E14400932BCF /* QuestionaireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DEC5B926C7E14400932BCF /* QuestionaireViewController.swift */; };
 		74E72CA526C6DE5700701B6B /* DishesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E72CA426C6DE5700701B6B /* DishesData.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		74C95BE326C6C02600705CE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74C95BE626C6C02600705CE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74C95BE826C6C02600705CE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74DEC5B926C7E14400932BCF /* QuestionaireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QuestionaireViewController.swift; path = "what-to-eat/Controller/QuestionaireViewController.swift"; sourceTree = SOURCE_ROOT; };
 		74E72CA426C6DE5700701B6B /* DishesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishesData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				74C95BE026C6C02600705CE7 /* Main.storyboard */,
+				74DEC5B926C7E14400932BCF /* QuestionaireViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 				744DAE0726C7D1C80001966E /* DishesModel.swift in Sources */,
 				74C95BDB26C6C02600705CE7 /* AppDelegate.swift in Sources */,
 				74C95BDD26C6C02600705CE7 /* SceneDelegate.swift in Sources */,
+				74DEC5BA26C7E14400932BCF /* QuestionaireViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -31,9 +31,7 @@ class QuestionaireViewController: UIViewController {
             if ingredientCount == dishesData.ingredientNumber{
                 self.performSegue(withIdentifier: "showResult", sender: self)
             }
-
-        }
-        else if sender == noButton {
+        } else if sender == noButton {
             dishesData.nextDish()
             ingredientLabel.text = dishesData.getDishIngredient()
         }
@@ -41,7 +39,10 @@ class QuestionaireViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showResult" {
-            _ = segue.destination as! ResultViewController
+            let resultVC = segue.destination as! ResultViewController
+            
+            resultVC.dishName = dishesData.getDish()
+            resultVC.dishImage = dishesData.getDishImage()
         }
     }
 }

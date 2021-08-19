@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 struct DishesData {
     let dishesModel = [DishesModel(dish: "Cheese Burger", tip: "Some random tip about making a burger.", ingredients: ["Cheese", "Burger Patty", "Minced Beef", "Lettuce"], dishImage: #imageLiteral(resourceName: "Burger")),
@@ -19,9 +20,18 @@ struct DishesData {
         if ingredientNumber < dishesModel[dishNumber].ingredients.count {
             return dishesModel[dishNumber].ingredients[ingredientNumber] as! String
         } else {
-            return ""
+            return dishesModel[dishNumber].ingredients.last as! String
         }
     }
+    
+    func getDish() -> String {
+        return dishesModel[dishNumber].dish
+    }
+    
+    func getDishImage() -> UIImage {
+        return dishesModel[dishNumber].dishImage
+    }
+    
     
     mutating func nextIngredient() {
         if ingredientNumber < dishesModel[dishNumber].ingredients.count {
@@ -34,6 +44,8 @@ struct DishesData {
         
         if dishNumber + 1 < dishesModel.count {
             dishNumber += 1
+            print(dishNumber)
+            print(dishesModel.count)
         }
     }
 }

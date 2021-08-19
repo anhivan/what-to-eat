@@ -16,11 +16,15 @@ struct DishesData {
     var ingredientNumber = 0
     
     mutating func getDishIngredient() -> String {
-        return dishesModel[dishNumber].ingredients[ingredientNumber] as! String
+        if ingredientNumber < dishesModel[dishNumber].ingredients.count {
+            return dishesModel[dishNumber].ingredients[ingredientNumber] as! String
+        } else {
+            return ""
+        }
     }
     
     mutating func nextIngredient() {
-        if ingredientNumber + 1 < dishesModel[dishNumber].ingredients.count {
+        if ingredientNumber < dishesModel[dishNumber].ingredients.count {
             ingredientNumber += 1
         }
     }

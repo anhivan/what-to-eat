@@ -22,13 +22,26 @@ class QuestionaireViewController: UIViewController {
     }
     
     @IBAction func buttonPressed(_ sender: UIButton) {
+        let ingredientCount =  dishesData.dishesModel[dishesData.dishNumber].ingredients.count
+        
         if sender == yesButton {
             dishesData.nextIngredient()
             ingredientLabel.text = dishesData.getDishIngredient()
+            
+            if ingredientCount == dishesData.ingredientNumber{
+                self.performSegue(withIdentifier: "showResult", sender: self)
+            }
+
         }
         else if sender == noButton {
             dishesData.nextDish()
             ingredientLabel.text = dishesData.getDishIngredient()
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showResult" {
+            _ = segue.destination as! ResultViewController
         }
     }
 }

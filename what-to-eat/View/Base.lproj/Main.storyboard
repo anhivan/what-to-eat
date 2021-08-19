@@ -48,7 +48,7 @@
                         <outlet property="beginButton" destination="Rcq-m0-Bvl" id="ZXJ-J8-AfS"/>
                         <outlet property="helloLabel" destination="v8P-W2-4b7" id="nkZ-R8-NRm"/>
                         <outlet property="introductionLabel" destination="Nwo-YI-OQ7" id="PzY-UP-5ki"/>
-                        <segue destination="oaM-eO-h9J" kind="presentation" identifier="goToQuestionaire" id="QMa-8v-1c4"/>
+                        <segue destination="oaM-eO-h9J" kind="presentation" identifier="goToQuestionaire" modalPresentationStyle="fullScreen" id="QMa-8v-1c4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -60,7 +60,7 @@
             <objects>
                 <viewController id="oaM-eO-h9J" customClass="QuestionaireViewController" customModule="what_to_eat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jg5-pN-nQs">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6k-F9-io2" userLabel="Ingredient Label">
@@ -95,6 +95,7 @@
                         <outlet property="ingredientLabel" destination="i6k-F9-io2" id="vnM-UA-7wV"/>
                         <outlet property="noButton" destination="8FU-pI-65g" id="kg7-9F-ceb"/>
                         <outlet property="yesButton" destination="LHU-fC-Pmo" id="Zft-Sh-C8U"/>
+                        <segue destination="9rC-BJ-3ny" kind="presentation" identifier="showResult" id="ERs-mV-0sa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BZy-Zo-Xm0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -102,19 +103,19 @@
             <point key="canvasLocation" x="886.95652173913049" y="137.94642857142856"/>
         </scene>
         <!--Result View Controller-->
-        <scene sceneID="cht-jF-je6">
+        <scene sceneID="nof-OA-I54">
             <objects>
-                <viewController id="fuY-RP-jem" customClass="ResultViewController" customModule="what_to_eat" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3Jf-P2-guZ" customClass="ResultViewController">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <viewController id="9rC-BJ-3ny" customClass="ResultViewController" customModule="what_to_eat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ftP-on-tJd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="cnv-KE-eOv"/>
+                        <viewLayoutGuide key="safeArea" id="Hc9-2J-mxk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="noV-m8-KXU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l5b-ST-9qP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1636" y="138"/>
+            <point key="canvasLocation" x="1629" y="138"/>
         </scene>
     </scenes>
     <resources>

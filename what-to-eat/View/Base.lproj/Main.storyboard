@@ -70,6 +70,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LHU-fC-Pmo" userLabel="Yes Button">
+                                <rect key="frame" x="103" y="483" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="YES"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="oaM-eO-h9J" eventType="touchUpInside" id="fQp-mw-pJt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8FU-pI-65g" userLabel="No Button">
+                                <rect key="frame" x="252" y="483" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="NO"/>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="oaM-eO-h9J" eventType="touchUpInside" id="xKt-l0-f6n"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Z1V-FM-ViZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -77,6 +93,8 @@
                     <navigationItem key="navigationItem" id="mmm-HT-ODH"/>
                     <connections>
                         <outlet property="ingredientLabel" destination="i6k-F9-io2" id="vnM-UA-7wV"/>
+                        <outlet property="noButton" destination="8FU-pI-65g" id="kg7-9F-ceb"/>
+                        <outlet property="yesButton" destination="LHU-fC-Pmo" id="Zft-Sh-C8U"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BZy-Zo-Xm0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

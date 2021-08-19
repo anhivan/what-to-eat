@@ -9,6 +9,6 @@ import Foundation
 
 struct IntroductionData {
     let hello = ["Hi,","Hello,","Bonjour,","Greetings,"]
-    let introduction = "Fear not fore I amm here to help you make a decision. But I need you to help me to help you first. Tell me what you have in your house."
+    let introduction = "Fear not fore I am here to help you make a decision. But I need you to help me to help you first. Tell me what you have in your house."
     let beginButtonText = "Let's start."
 }

@@ -10,8 +10,10 @@ import UIKit
 
 class QuestionaireViewController: UIViewController {
     @IBOutlet weak var ingredientLabel: UILabel!
+    @IBOutlet weak var yesButton: UIButton!
+    @IBOutlet weak var noButton: UIButton!
     
-    let dishesData = DishesData()
+    var dishesData = DishesData()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,4 +21,14 @@ class QuestionaireViewController: UIViewController {
         ingredientLabel.text = dishesData.getDishIngredient()
     }
     
+    @IBAction func buttonPressed(_ sender: UIButton) {
+        if sender == yesButton {
+            dishesData.nextIngredient()
+            ingredientLabel.text = dishesData.getDishIngredient()
+        }
+        else if sender == noButton {
+            dishesData.nextDish()
+            ingredientLabel.text = dishesData.getDishIngredient()
+        }
+    }
 }

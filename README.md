@@ -8,3 +8,4 @@ This is an application that helps to decide what to eat based on the ingredients
 * To not rely on copy pasting code from internet without understanding the code.
 * To build a fully functioning, beautiful app that could potentially be published in App Store.
 * To expand portfolio.
+* To have fun.
